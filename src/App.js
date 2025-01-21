@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
         <Routes>
-          <Route path="/meu_portifolio" element={<Home />} inital={true} exact />
+          <Route path="/portifolio" element={<Home />} inital={true} exact />
         </Routes>
     </Router>
   );
