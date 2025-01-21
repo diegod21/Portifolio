@@ -7,12 +7,12 @@ import Home from './views';
 
 function App() {
   return (
-    <Router>
-        <Routes>
-          <Route path="/portifolio" element={<Home />} inital={true} exact />
-        </Routes>
-    </Router>
-    // <Home />
+    // <Router>
+    //     <Routes>
+    //       <Route path="/portifolio" element={<Home />} inital={true} exact />
+    //     </Routes>
+    // </Router>
+    <Home />
   );
 }
 
