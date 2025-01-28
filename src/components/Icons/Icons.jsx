@@ -17,9 +17,10 @@ function Icons({
   useHtml,
   useCss,
   size,
+  textAlign,
 }) {
   return (
-    <div>
+    <div className="icons" style={{ textAlign: textAlign ? textAlign : ""}}>
       {useJs && (
         <FontAwesomeIcon
           icon={faJs}
@@ -85,7 +86,7 @@ function Icons({
       {useHtml && (
         <FontAwesomeIcon
           icon={faHtml5}
-          style={{ fontSize: size, margin: "0 10px" }}
+          style={{ fontSize: size, margin: "0 10px", }}
         />
       )}
       {useCss && (

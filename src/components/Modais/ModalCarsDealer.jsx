@@ -20,7 +20,7 @@ function ModalCarsDealerApp({ handleOpenModal }) {
               aria-label="Close"
             ></button>
           </div>
-          <div className="modal-body" style={{ height: "500px" }}>
+          <div className="modal-body" style={{ height: "70%", }}>
             <div className="carousel slide" id="webRideCarrosel">
               <div className="carousel-inner">
                 <div

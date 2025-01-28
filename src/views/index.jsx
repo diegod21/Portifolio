@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Modal } from "bootstrap";
 import ModalWebRide from "../components/Modais/ModalWebRide";
+import ModalGicWeb from "../components/Modais/ModalGicWeb";
 import ModalCarsDealerApp from "../components/Modais/ModalCarsDealer";
 import PersonalInfo from "../components/PersonalInfo/PersonalInfo";
 import ProjectsCarrousel from "../components/Carrousel/ProjectsCarrousel";
@@ -31,6 +32,7 @@ function Home() {
       </div>
       <ProjectsCarrousel />
 
+      <ModalGicWeb handleOpenModal={handleOpenModal}></ModalGicWeb>
       <ModalWebRide handleOpenModal={handleOpenModal}></ModalWebRide>
       <ModalCarsDealerApp
         handleOpenModal={handleOpenModal}

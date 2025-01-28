@@ -6,9 +6,29 @@
 .main {
   display: flex;
 }
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .icons{
+    flex-direction: column;
+  }
+  .personalInfo{
+    width: 100vw;
+  }
+}
+@media (min-width: 768px) {
+  .personalInfo{
+    width: 50vw;
+  }
+  .imageDiv{
+    width: 50vw;
+  }
+}
 .personalInfo {
   background-color: #042940;
-  width: 50vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,10 +36,16 @@
   color: #fff;
   text-align: center;
 }
+.icons{
+   display: "flex";
+    flex-direction: "row";
+     justify-content: "center";
+      align-items: "center" ;
+}
 
 .imageDiv {
   background-color: #8c8c8c;
-  width: 50vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,8 +76,8 @@
   margin: auto;
 }
 .carousel-inner {
-  padding-top: 10%;
   background-color: #595959;
+  width: 100%;
 }
 .carousel-inner button {
   /* padding-top: 22%; */
@@ -92,6 +118,42 @@
 
 .f5 {
   background: url("images/Results.PNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 450px;
+  width: 450px;
+  margin: auto;
+}
+.f6 {
+  background: url("images/gic/Home.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 450px;
+  width: 450px;
+  margin: auto;
+}
+.f7 {
+  background: url("images/gic/Bills.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 450px;
+  width: 450px;
+  margin: auto;
+}
+.f8 {
+  background: url("images/gic/Users.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 450px;
+  width: 450px;
+  margin: auto;
+}
+.f9 {
+  background: url("images/gic/Wheater.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
