@@ -11,20 +11,30 @@
   .main {
     flex-direction: column;
   }
-  .icons{
-    flex-direction: column;
-  }
-  .personalInfo{
+  .personalInfo {
     width: 100vw;
   }
 }
 @media (min-width: 768px) {
-  .personalInfo{
+  .personalInfo {
     width: 50vw;
   }
-  .imageDiv{
+  .imageDiv {
     width: 50vw;
   }
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .icons-container {
+    flex-direction: row;}
 }
 .personalInfo {
   background-color: #042940;
@@ -35,12 +45,6 @@
   height: 100vh;
   color: #fff;
   text-align: center;
-}
-.icons{
-   display: "flex";
-    flex-direction: "row";
-     justify-content: "center";
-      align-items: "center" ;
 }
 
 .imageDiv {

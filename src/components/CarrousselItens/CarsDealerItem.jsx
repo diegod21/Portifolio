@@ -14,7 +14,7 @@ function CarsDealerItem() {
         border: "0.5px solid #000",
         borderRadius: "5px",
         width: "60%",
-        marginBottom: "8%",
+        padding:"5px"
       }}
     >
       <p>{Paragraph}</p>

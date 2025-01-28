@@ -18,6 +18,7 @@ function WebRideItem({ handleOpenModal }) {
         borderRadius: "5px",
         width: "60%",
         marginBottom: "8%",
+        padding:"5px"
       }}
     >
       <p>{WebRideParagraph}</p>

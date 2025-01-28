@@ -12,10 +12,11 @@ function ModalGicWeb() {
         borderRadius: "5px",
         width: "60%",
         marginBottom: "8%",
+        padding:"5px"
       }}
     >
       <p>{Paragraph}</p>
-      <Icons useHtml useCss useJs useReact useNext useNode useRedux  textAlign={"center"} size={"32px"} />
+      <Icons useHtml useCss useJs useReact useNext useNode useRedux size={"32px"} />
     </div>
   );
 }

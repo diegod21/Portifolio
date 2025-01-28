@@ -20,7 +20,7 @@ function Icons({
   textAlign,
 }) {
   return (
-    <div className="icons" style={{ textAlign: textAlign ? textAlign : ""}}>
+    <div className="icons-container" style={{ textAlign: textAlign ? textAlign : ""}}>
       {useJs && (
         <FontAwesomeIcon
           icon={faJs}
