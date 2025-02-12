@@ -58,6 +58,9 @@
   color: #fff;
   text-align: center;
 }
+.imageDiv img{
+  width: 370px;
+}
 
 .button {
   align-self: center;
