@@ -2,6 +2,7 @@ import { Modal } from "bootstrap";
 import WebRideItem from "../CarrousselItens/WebRideItem";
 import CarsDealerItem from "../CarrousselItens/CarsDealerItem"; 
 import GicwebItem from "../CarrousselItens/GicwebItem"; 
+import WebSalesItem from "../CarrousselItens/WebSalesItem";
 
 function ProjectsCarrousel() {
   const handleOpenModal = (id) => {
@@ -32,6 +33,13 @@ function ProjectsCarrousel() {
           onClick={() => handleOpenModal("modalGicWeb")}
         >
          <GicwebItem handleOpenModal={handleOpenModal} />
+        </div>
+        <div
+          className="carousel-item"
+          style={{ paddingTop: "10%" }}
+          onClick={() => handleOpenModal("modalWebSales")}
+        >
+         <WebSalesItem handleOpenModal={handleOpenModal} />
         </div>
       </div>
       <button

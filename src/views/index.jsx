@@ -11,7 +11,7 @@ import ModalGicWeb from "../components/Modais/ModalGicWeb";
 import ModalCarsDealerApp from "../components/Modais/ModalCarsDealer";
 import PersonalInfo from "../components/PersonalInfo/PersonalInfo";
 import ProjectsCarrousel from "../components/Carrousel/ProjectsCarrousel";
-
+import ModalWebSales from "../components/Modais/ModalWebSales";
 function Home() {
   const handleOpenModal = (id) => {
     const modal = new Modal(document.getElementById(id));
@@ -37,6 +37,7 @@ function Home() {
       <ModalCarsDealerApp
         handleOpenModal={handleOpenModal}
       ></ModalCarsDealerApp>
+      <ModalWebSales handleOpenModal={handleOpenModal}></ModalWebSales>
     </div>
   );
 }
