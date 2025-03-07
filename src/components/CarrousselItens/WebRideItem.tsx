@@ -1,4 +1,5 @@
 import Icons from "../Icons/Icons";
+import React from "react";
 
 const WebRideParagraph = ` O WebRide é uma plataforma de rastreamento GPS
           que oferece recursos avançados para a prática de atividades ao ar
@@ -7,7 +8,7 @@ const WebRideParagraph = ` O WebRide é uma plataforma de rastreamento GPS
           distância e outros parâmetros relevantes. A plataforma permite
           salvar seus dados.`;
 
-function WebRideItem({ handleOpenModal }) {
+const WebRideItem: React.FC = () =>{ 
   return (
     <div
       style={{

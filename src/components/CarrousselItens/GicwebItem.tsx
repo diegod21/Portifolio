@@ -1,6 +1,7 @@
 import Icons from "../Icons/Icons";
+import React from "react";
 
-function ModalGicWeb() {
+const ModalGicWeb: React.FC = () => {
   const Paragraph = 
   `GICWEB - Participei de um projeto no qual fui responsável pela resolução de bugs, criação do layout frontend, incluindo a implementação de CRUD completo, desde as rotas até a integração com o banco de dados. Além disso, desenvolvi APIs no backend para uso externo e realizei integrações entre o site e os aplicativos móveis do projeto, um voltado para os moradores do condomínio e outro para os motoristas. As tecnologias utilizadas incluíram React, Node.js, Express, MySQL, React Native e JWT, garantindo uma solução robusta e eficiente para as diversas necessidades do projeto.`;
   return (

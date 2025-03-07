@@ -4,7 +4,7 @@ import CarsDealerItem from "../CarrousselItens/CarsDealerItem";
 import GicwebItem from "../CarrousselItens/GicwebItem"; 
 import WebSalesItem from "../CarrousselItens/WebSalesItem";
 
-function ProjectsCarrousel() {
+const ProjectsCarrousel: React.FC = () => {
   const handleOpenModal = (id) => {
     const modal = new Modal(document.getElementById(id));
     modal.show();
@@ -17,7 +17,7 @@ function ProjectsCarrousel() {
           onClick={() => handleOpenModal("modalWebRide")}
         >
           <div style={{ paddingTop: "10%" }}>
-            <WebRideItem handleOpenModal={handleOpenModal} />
+            <WebRideItem />
           </div>
         </div>
         <div
@@ -25,21 +25,21 @@ function ProjectsCarrousel() {
           onClick={() => handleOpenModal("modalCarsDealerApp")}
           style={{ paddingTop: "10%" }}
         >
-         <CarsDealerItem handleOpenModal={handleOpenModal} />
+         <CarsDealerItem />
         </div>
         <div
           className="carousel-item active"
           style={{ paddingTop: "10%" }}
           onClick={() => handleOpenModal("modalGicWeb")}
         >
-         <GicwebItem handleOpenModal={handleOpenModal} />
+         <GicwebItem />
         </div>
         <div
           className="carousel-item"
           style={{ paddingTop: "10%" }}
           onClick={() => handleOpenModal("modalWebSales")}
         >
-         <WebSalesItem handleOpenModal={handleOpenModal} />
+         <WebSalesItem />
         </div>
       </div>
       <button

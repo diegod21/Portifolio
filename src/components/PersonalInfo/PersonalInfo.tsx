@@ -1,8 +1,9 @@
+import React from "react";
 import Icons from "../Icons/Icons";
 
 const Hello = "Olá Eu Sou Diego Carvalho";
 
-function PersonalInfo() {
+const PersonalInfo:React.FC = () => {
   return (
     <div className="personalInfo">
       <div>

@@ -1,6 +1,7 @@
 import Icons from "../Icons/Icons";
+import React from "react";
 
-function CarsDealerItem() {
+const CarsDealerItem: React.FC = () => {
   const Paragraph = `  Um projeto desenvolvido com React.js, Next.js e Tailwind CSS, integrado
         a uma API externa para buscas. Permite a seleção de uma marca e ano para
         filtrar e exibir todos os veículos fabricados por essa marca no ano

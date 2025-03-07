@@ -1,18 +1,23 @@
-function modalWebSales({ handleOpenModal }) {
+import React from "react";
+
+interface ModalGicWebProps {
+  handleOpenModal: (value: string) => void;
+}
+
+const ModalGicWeb: React.FC<ModalGicWebProps> = ({ handleOpenModal })=> {
     return (
       <div
         className="modal fade"
-        id="modalWebSales"
-        tabIndex="-31"
-        aria-labelledby="modalWebSales"
+        id="modalGicWeb"
+        tabIndex={-1}
+        aria-labelledby="modalGicWeb"
         aria-hidden="true"
       >
         <div className="modal-dialog">
-
-        <div className="modal-content" style={{ width: "790px", justifySelf: "center" }}>
+          <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title" id="modalWebSales">
-                Detalhes do Projeto - <a href="https://github.com/diegod21/SalesWebCsharp" target="_blank">Web Sales</a>
+              <h5 className="modal-title" id="modalGicWeb">
+                Detalhes do Projeto - <a href="https://app.gicweb.com.br" target="_blank">GICWEB</a>
               </h5>
               <button
                 type="button"
@@ -22,37 +27,34 @@ function modalWebSales({ handleOpenModal }) {
               ></button>
             </div>
             <div className="modal-body" style={{ height: "450px" }}>
-              <div className="carousel slide" id="WebSalesCarrosel">
+              <div className="carousel slide" id="gicwebCarrosel">
                 <div className="carousel-inner">
                   <div
                     className="carousel-item active"
                     onClick={() => handleOpenModal("Conteúdo do projeto WebRide")}
                   >
-                    <div className="f10"></div>
+                    <div className="f6"></div>
                   </div>
                   <div className="carousel-item">
-                    <div className="f11"></div>
+                    <div className="f7"></div>
                   </div>
                   <div className="carousel-item">
-                    <div className="f12"></div>
+                    <div className="f8"></div>
                   </div>
                   <div className="carousel-item">
-                    <div className="f13"></div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="f14"></div>
+                    <div className="f9"></div>
                   </div>
                 </div>
                 <button
                   className="carousel-control-prev"
-                  data-bs-target="#WebSalesCarrosel"
+                  data-bs-target="#gicwebCarrosel"
                   data-bs-slide="prev"
                 >
                   <span className="carousel-control-prev-icon"></span>
                 </button>
                 <button
                   className="carousel-control-next"
-                  data-bs-target="#WebSalesCarrosel"
+                  data-bs-target="#gicwebCarrosel"
                   data-bs-slide="next"
                 >
                   <span className="carousel-control-next-icon"></span>
@@ -73,5 +75,5 @@ function modalWebSales({ handleOpenModal }) {
       </div>
     );
   }
-  export default modalWebSales;
+  export default ModalGicWeb;
   

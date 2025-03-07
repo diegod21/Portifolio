@@ -1,16 +1,22 @@
-function ModalCarsDealerApp({ handleOpenModal }) {
+import React from "react";
+
+interface modalWebRideProps {
+  handleOpenModal: (value: string) => void;
+}
+
+const ModalWebRide: React.FC<modalWebRideProps> = ({ handleOpenModal }) => {
   return (
     <div
       className="modal fade"
-      id="modalCarsDealerApp"
-      tabIndex="-1"
-      aria-labelledby="modalCarsDealerAppLabel"
+      id="modalWebRide"
+      tabIndex={-1}
+      aria-labelledby="modalWebRideLabel"
       aria-hidden="true"
     >
       <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title" id="modalCarsDealerAppLabel">
+            <h5 className="modal-title" id="modalWebRideLabel">
               Detalhes do Projeto
             </h5>
             <button
@@ -20,38 +26,35 @@ function ModalCarsDealerApp({ handleOpenModal }) {
               aria-label="Close"
             ></button>
           </div>
-          <div className="modal-body" style={{ height: "70%", }}>
-            <div className="carousel slide" id="webRideCarrosel">
+          <div className="modal-body" style={{ height: "500px" }}>
+            <div className="carousel slide" id="carsDealerCarrosel">
               <div className="carousel-inner">
                 <div
                   className="carousel-item active"
                   onClick={() => handleOpenModal("Conteúdo do projeto WebRide")}
                 >
-                  <div className="f4"></div>
+                  <div className="f1"></div>
                 </div>
                 <div className="carousel-item">
-                  <div className="f5"></div>
+                  <div className="f2"></div>
+                </div>
+                <div className="carousel-item">
+                  <div className="f3"></div>
                 </div>
               </div>
               <button
                 className="carousel-control-prev"
-                data-bs-target="#webRideCarrosel"
+                data-bs-target="#carsDealerCarrosel"
                 data-bs-slide="prev"
               >
-                <span
-                  className="carousel-control-prev-icon"
-                  style={{ backgroundColor: "black" }}
-                ></span>
+                <span className="carousel-control-prev-icon"></span>
               </button>
               <button
                 className="carousel-control-next"
-                data-bs-target="#webRideCarrosel"
+                data-bs-target="#carsDealerCarrosel"
                 data-bs-slide="next"
               >
-                <span
-                  className="carousel-control-next-icon"
-                  style={{ backgroundColor: "black" }}
-                ></span>
+                <span className="carousel-control-next-icon"></span>
               </button>
             </div>
           </div>
@@ -69,4 +72,4 @@ function ModalCarsDealerApp({ handleOpenModal }) {
     </div>
   );
 }
-export default ModalCarsDealerApp;
+export default ModalWebRide;

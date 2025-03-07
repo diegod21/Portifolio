@@ -1,3 +1,4 @@
+import React from "react";
 import Icons from "../Icons/Icons";
 
 const WebSalesParagraph = `
@@ -9,7 +10,7 @@ Registro e consulta de vendas, permitindo a visualização das transações de c
 (Ainda está em desenvolvimento)
 `;
 
-function WebSalesItem({ handleOpenModal }) {
+const WebSalesItem: React.FC = () => {
   return (
     <div
       style={{

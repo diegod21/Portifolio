@@ -8,8 +8,28 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DotNetIcon from "../../images/netIcon.png";
 import IconMySql from "../../images/MysqlIcon.png";
+import React from "react";
 
-function Icons({
+interface IconProps {
+  useReact?: boolean;
+  useJs?: boolean;
+  useTypescript?: boolean;
+  useRedux?: boolean;
+  useNode?: boolean;
+  useNext?: boolean;
+  useTailwind?: boolean;
+  useHtml?: boolean;
+  useCss?: boolean;
+  useCsharp?: boolean;
+  useEntityFramework?: boolean;
+  useMySQL?: boolean;
+  useBootstrap?: boolean;
+  useAspNet?: boolean;
+  size?: string;
+  textAlign?: any;
+}
+const Icons: React.FC<IconProps> = ({
+  size,
   useReact,
   useJs,
   useTypescript,
@@ -23,17 +43,43 @@ function Icons({
   useEntityFramework,
   useMySQL,
   useBootstrap,
-  useAspNet,
-  size,
   textAlign,
-}) {
+}) => {
   return (
-    <div className="icons-container" style={{ textAlign: textAlign ? textAlign : "" }}>
-      {useJs && <FontAwesomeIcon icon={faJs} style={{ fontSize: size, margin: "0 10px" }} />}
-      {useReact && <FontAwesomeIcon icon={faReact} style={{ fontSize: size, margin: "0 10px" }} />}
-      {useNode && <FontAwesomeIcon icon={faNodeJs} style={{ fontSize: size, margin: "0 10px" }} />}
-      {useHtml && <FontAwesomeIcon icon={faHtml5} style={{ fontSize: size, margin: "0 10px" }} />}
-      {useCss && <FontAwesomeIcon icon={faCss3Alt} style={{ fontSize: size, margin: "0 10px" }} />}
+    <div
+      className="icons-container"
+      style={{ textAlign: textAlign ? textAlign : "" }}
+    >
+      {useJs && (
+        <FontAwesomeIcon
+          icon={faJs}
+          style={{ fontSize: size, margin: "0 10px" }}
+        />
+      )}
+      {useReact && (
+        <FontAwesomeIcon
+          icon={faReact}
+          style={{ fontSize: size, margin: "0 10px" }}
+        />
+      )}
+      {useNode && (
+        <FontAwesomeIcon
+          icon={faNodeJs}
+          style={{ fontSize: size, margin: "0 10px" }}
+        />
+      )}
+      {useHtml && (
+        <FontAwesomeIcon
+          icon={faHtml5}
+          style={{ fontSize: size, margin: "0 10px" }}
+        />
+      )}
+      {useCss && (
+        <FontAwesomeIcon
+          icon={faCss3Alt}
+          style={{ fontSize: size, margin: "0 10px" }}
+        />
+      )}
 
       {useTypescript && (
         <img
@@ -70,7 +116,7 @@ function Icons({
           style={{ width: size, height: size, margin: "0 10px" }}
         />
       )}
-     {useEntityFramework && (
+      {useEntityFramework && (
         <img
           src={DotNetIcon}
           alt="Entity Framework"
@@ -93,5 +139,5 @@ function Icons({
       )}
     </div>
   );
-}
+};
 export default Icons;
